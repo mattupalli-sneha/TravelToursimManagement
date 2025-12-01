@@ -1,27 +1,24 @@
-Travel & Tourism Management System (MERN)
+# Travel & Tourism Management System (MERN)
 
-This is a simple Travel & Tourism Management System built using the MERN stack (MongoDB, Express, React, Node.js).
-The project contains:
+This is a simple Travel & Tourism Management System created using the MERN stack (MongoDB, Express, React, Node.js).
+The project contains two main parts:
 
-backend → All APIs, routes, controllers, MongoDB models
+- backend → APIs, routes, controllers, database models
+- frontend → React UI for users and agencies
 
-frontend → React user interface for users and agencies
+This system allows users to browse packages, make bookings, and agencies to manage packages and dashboard.
 
-This system allows users to browse travel packages, make bookings, and agencies to manage their dashboards.
+------------------------------------------------------------
 
 ⭐ Features
+- User Signup & Login
+- Agency Login & Dashboard
+- View Travel Packages (title, price, days, location, images)
+- Booking creation
+- Secure REST API with Express & MongoDB
+- Simple React Frontend
 
-User Signup & Login
-
-Agency Login & Dashboard
-
-Travel Packages (title, price, days, location, images)
-
-Booking creation
-
-REST API with Express
-
-React Frontend for UI
+------------------------------------------------------------
 
 📁 Project Structure
 backend/
@@ -40,18 +37,20 @@ frontend/
     Login.js
     Signup.js
     Home.js
-    many more files...
+    other component files...
   package.json
 
+------------------------------------------------------------
+
 ⚙️ Requirements
+- Node.js
+- npm
+- MongoDB (local or Atlas)
 
-Node.js
-
-npm
-
-MongoDB (Local or Atlas)
+------------------------------------------------------------
 
 🔧 How to Run the Project
+
 1. Clone the Repository
 git clone <your-repo-url>
 cd your-folder
@@ -60,16 +59,12 @@ cd your-folder
 cd backend
 npm install
 
-
-Create a .env file inside the backend folder:
-
+Create a file named .env inside backend with:
 MONGO_URI=your_mongodb_url
 PORT=5000
 JWT_SECRET=anythingsecret
 
-
 Start backend:
-
 npm run dev
 
 3. Setup Frontend
@@ -77,12 +72,13 @@ cd frontend
 npm install
 npm start
 
-
 Frontend runs at: http://localhost:3000
-
 Backend runs at: http://localhost:5000
 
+------------------------------------------------------------
+
 🛣️ API Routes (Examples)
+
 Users
 POST /api/users/signup
 POST /api/users/login
@@ -94,26 +90,23 @@ GET /api/agencies/:id
 Bookings
 POST /api/bookings/create
 
-🧪 Technologies Used
+------------------------------------------------------------
 
-MongoDB
+🧪 Tech Stack
+- MongoDB
+- Express.js
+- React.js
+- Node.js
+- Mongoose
 
-Express.js
-
-React.js
-
-Node.js
-
-Mongoose
+------------------------------------------------------------
 
 👨‍💻 Contributors
+- Sneha
+- Sankar
+- Charan
 
-Sneha
-
-Sankar
-
-Charan
+------------------------------------------------------------
 
 📜 License
-
-This project is for academic and learning purposes.
+This project is developed for academic and learning purposes.
