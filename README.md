@@ -1,60 +1,119 @@
-# Travel & Tourism Management System – Backend
+Travel & Tourism Management System (MERN)
 
-## Overview
-This is the backend for a Travel & Tourism Management System built with Node.js, Express.js, MongoDB, and Mongoose. It provides user authentication, agency management, tour packages, and booking features using a clean and simple backend structure.
+This is a simple Travel & Tourism Management System built using the MERN stack (MongoDB, Express, React, Node.js).
+The project contains:
 
-## How to Run
-1. Go to the backend folder
+backend → All APIs, routes, controllers, MongoDB models
+
+frontend → React user interface for users and agencies
+
+This system allows users to browse travel packages, make bookings, and agencies to manage their dashboards.
+
+⭐ Features
+
+User Signup & Login
+
+Agency Login & Dashboard
+
+Travel Packages (title, price, days, location, images)
+
+Booking creation
+
+REST API with Express
+
+React Frontend for UI
+
+📁 Project Structure
+backend/
+  controllers/
+  middleware/
+  models/
+  routes/
+  server.js
+  package.json
+
+frontend/
+  public/
+  src/
+    Agency.js
+    AgencyDashboard.js
+    Login.js
+    Signup.js
+    Home.js
+    many more files...
+  package.json
+
+⚙️ Requirements
+
+Node.js
+
+npm
+
+MongoDB (Local or Atlas)
+
+🔧 How to Run the Project
+1. Clone the Repository
+git clone <your-repo-url>
+cd your-folder
+
+2. Setup Backend
 cd backend
-
-2. Install Dependencies
 npm install
 
-3. Create a .env file and add:
-MONGO_URI=your_mongodb_connection
-JWT_SECRET=your_secret_key
+
+Create a .env file inside the backend folder:
+
+MONGO_URI=your_mongodb_url
 PORT=5000
+JWT_SECRET=anythingsecret
 
-4. Start the Server
+
+Start backend:
+
+npm run dev
+
+3. Setup Frontend
+cd frontend
+npm install
 npm start
-(Or run node server.js)
 
-## Folder Structure
-/backend
-  /api
-    /controllers
-    /middleware
-    /models
-    /routes
-  package.json
-  package-lock.json
-  server.js
 
-## API Routes
+Frontend runs at: http://localhost:3000
 
-### Users – /api/users
-POST /register
-POST /login
-GET /profile
+Backend runs at: http://localhost:5000
 
-### Agencies – /api/agencies
-POST /create
-GET /all
+🛣️ API Routes (Examples)
+Users
+POST /api/users/signup
+POST /api/users/login
 
-### Bookings – /api/bookings
-POST /create
-GET /user/:id
+Agencies
+GET /api/agencies
+GET /api/agencies/:id
 
-### Packages – /api/packages
-POST /create
-GET /all
+Bookings
+POST /api/bookings/create
 
-## Features
-- JWT authentication
-- Simple and clean REST API
-- Mongoose schema validation
-- Proper routing and controllers
-- Stable responses and error handling
+🧪 Technologies Used
 
-## Author
-Sneha – Backend Developer (Node.js | MongoDB)
+MongoDB
+
+Express.js
+
+React.js
+
+Node.js
+
+Mongoose
+
+👨‍💻 Contributors
+
+Sneha
+
+Sankar
+
+Charan
+
+📜 License
+
+This project is for academic and learning purposes.
